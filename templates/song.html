@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!--
+{{ Album }}
+{{ Songs }}-->
+
+{% for i in Songs %}
+   {{ i.song_title }},
+{% endfor %} 
+<br>
+{% for i in  Album %}
+   {{ i.artist }},
+{% endfor %}   
+
+</body>
+</html>
