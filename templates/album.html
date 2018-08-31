@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Song library</title>
+	<title>Album library</title>
 </head>
 <body>
 <!---
@@ -13,10 +13,10 @@
     <td>No</td>
     <td>Title</td> 
   </tr>
-  {% for i in Songs %}
+  {% for i in Album %}
   <tr>
      <td>{{ i.id }}</td>
-    <td>{{ i.artist }}</td>
+    <td>{{ i.album_title }}</td>
     {% endfor %} 
     </tr>
     <br>
@@ -24,9 +24,7 @@
 </table>
 
 <br>
-<!--{% for i in  Album %}
-   {{ i.artist }},
-{% endfor %} -->  
+
 
 </body>
 </html>

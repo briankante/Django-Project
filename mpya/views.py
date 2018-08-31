@@ -10,6 +10,12 @@ def today(request):
 	return render(request,'today.html')
 
 def song(request):
-	album = Album.objects.all()
+	#album = Album.objects.all()
 	songs = Song.objects.all()
-	return render(request,'song.html',{'Songs':songs,'Album':album})
+	return render(request,'song.html',{'Songs':songs})
+
+
+def album(request):
+	album = Album.objects.all()
+	#songs = Song.objects.all()
+	return render(request,'album.html',{'Album':album})
