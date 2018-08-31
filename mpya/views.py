@@ -9,6 +9,10 @@ def home(request):
 def today(request):
 	return render(request,'today.html')
 
+
+def Songa(request):
+	return render(request,'songa.html')
+
 def song(request):
 	#album = Album.objects.all()
 	songs = Song.objects.all()

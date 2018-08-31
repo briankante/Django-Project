@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>TING,NA SECONDAY</title>
+    <title>SONGA MUSIC</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
 
     <!-- Bootstrap core CSS -->
@@ -56,8 +56,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1 class="display-3">TING'NA SECONDARY</h1>
-        <p>The school is located in Migori County  Suna East Consituency about  10 Kms from the Kisii- Sirare Highway.The school existance is dated back from 1990 when it formally begun as a sports center.TING'NA MIXED SECONDAY is a public-owned  mixed secondary school offering 8-4-4 education system.</p>
+        <h1 class="display-3">MUSIC STORE</h1>
+        <p>Download and listen to latest music from here </p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button"> View more &raquo;</a></p>
       </div>
     </div>
@@ -66,12 +66,22 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>SCHOOL MISSION</h2>
-          <p>To instill disciple and nature students to being what the real world demads from them<p>
-            <p>SCHOOL VISION<p>
-            <p>To be the ultimate best supplier of wisdom to the students in the region<p>
-            <p>SCHOOL MOTTO<p>
-            <p>cogito ecoto sum </p>
+          <h2>songs</h2>
+          <p><table  width="100%">
+    <td>No</td>
+    <td>Title</td> 
+  </tr>
+  {% for i in Songs %}
+  <tr>
+     <td>{{ i.id }}</td>
+    <td>{{ i.artist }}</td>
+    {% endfor %} 
+    </tr>
+    <br>
+
+</table>
+<p>
+            
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">

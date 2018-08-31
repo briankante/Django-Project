@@ -8,5 +8,6 @@ urlpatterns = [
     path('',        views.home,    name='home'),
     path('today/',  views.today,   name='today'),
     path('song/',  views.song,   name='song'),
-    path('album/',  views.album,   name='album')
+    path('album/',  views.album,   name='album'),
+    path('songa/',  views.Songa,   name='songa')
 ]
